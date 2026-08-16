@@ -6,7 +6,7 @@ public:
         if (n < 3) {
             return nums[0];
         }
-        while(i<n){
+        while(i<n-1){
             if(nums[i]==nums[i+1]){
                 i+=2;
             }
@@ -14,6 +14,6 @@ public:
                 return nums[i];
             }
         }
-        return -1;
+        return nums[n-1];
     }
 };
