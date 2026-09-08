@@ -15,10 +15,7 @@ public:
         int i=1;
         ListNode* temp=head;
         ListNode* midvalue=nullptr;
-        if(head==nullptr){
-            return nullptr;
-        }
-        else if(head->next==nullptr){
+        if(head==nullptr || head->next==nullptr){
             return head;
         }
         while(temp!=nullptr){
